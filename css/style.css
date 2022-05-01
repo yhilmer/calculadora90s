@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #cccccc;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: #000000;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover, a:active { 
+    background-color: #93c7e5;
+}
+
+.imagenPrincipal {
+    width: 50%;
+    height: auto;
+    align-self: center;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+.imagenColumna {
+    width: 100%;
+    height: auto;
+    box-shadow: -1px 1px 7px 0px #666666;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #cccccc;
+    font-size: small;
+    color: #000000;
+}
+
+footer .redesSociales {
+    font-size: large;
+}
