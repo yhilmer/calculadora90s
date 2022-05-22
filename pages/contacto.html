@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/25695820cd.js" crossorigin="anonymous"></script>
+    <script src="./../js/validacionContacto.js"></script>
     <title>Calculadora90s</title>
 </head>
+
 <body>
     <header>
         <nav>
             <a href="../index.html">Home</a>
-            <a href="noticia.html">Noticias</a>
             <a href="contacto.html">Contacto</a>
             <a href="sobremi.html">Sobre mi</a>
         </nav>
     </header>
+    <div class="titulo">
+        <h1>Contacto</h1>
+    </div>
+    <div class="fila">
+        <div class="columna">
 
-    <h1>Contacto</h1>
+            <form class="texto">
+                <label for="apellido">Datos Personales:</label>
+                <input type="text" placeholder="Ingrese su nombre" id="nombre" />
+                <input type="text" placeholder="Ingrese su apellido" id="apellido" />
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Ingrese su email" id="email" />
+                <br><br>
+                <label for="calle">Dirección:</label>
+                <input type="text" placeholder="Calle" id="calle" />
+                <input type="text" placeholder="Altura" id="altura" />
+                <br><br>
+                <label for="pais">País:</label>
+                <select id="pais">
+                    <option disabled selected value> -- Seleccciona -- </option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <br><br>
+                <button onclick="sendContact();">Send contact</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Todos los derechos reservados por Yhilmer Vivas 2022</p>
+        <div class="redesSociales">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </footer>
 </body>
+
 </html>

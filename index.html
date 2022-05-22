@@ -1,57 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/25695820cd.js" crossorigin="anonymous"></script>
-    <title>Calculadora90s</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Utilizar al menos un Iframe, íconos de FontAwesome, y fuentes locales o bien de Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/25695820cd.js" crossorigin="anonymous"></script>
+  <title>Calculadora90s</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="./pages/noticia.html">Noticias</a>
-            <a href="./pages/contacto.html">Contacto</a>
-            <a href="./pages/sobremi.html">Sobre mi</a>
-        </nav>
-    </header>
-    
+  <!-- Esta etiqueta contiene el header de la pagina que es el menu superior -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="./pages/contacto.html">Contacto</a>
+      <a href="./pages/sobremi.html">Sobre mi</a>
+    </nav>
+  </header>
+
+  <div class="columna">
+    <h1><i class="fa-solid fa-calculator"></i> Calculadoras de los 90 <i class="fa-solid fa-calculator"></i></h1>
+    <br>
+    <h3>Página creada para rendir tributo a estas piezas de Ingeniería creadas a finales del Siglo XIX</h3>
+    <br>
+    <img class="imagenPrincipal" src="./images/calculadoras.jpg" alt="">
+  </div>
+
+  <!-- En esta sección tenemos 3 columnas dentro de una fila, para poder organizar las 3 calculadoras a mostrar -->
+  <div class="fila">
     <div class="columna">
-        <h1><i class="fa-solid fa-calculator"></i> Calculadora de los 90 <i class="fa-solid fa-calculator"></i></h1> 
-        <h3>Página creada para rendir tributo a las calculadoras mas famosas de los 90's</h3>
-        <img class="imagenPrincipal" src="./images/F100009628.jpg" alt="">
-    </div>
-   
-
-    <div class="fila">
-            <div class="columna"> 
-                <img class="imagenColumna" src="./images/F100009628.jpg" alt="">
-                <p>prueba1</p>
+      <a href="./pages/calculadoraHP.html">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./images/hp_resize.jpg" alt="48G" class="imagenColumna">
             </div>
-
-            <div class="columna">
-                <img class="imagenColumna" src="./images/F100009628.jpg" alt="">
-                <p>prueba2</p>
+            <div class="flip-card-back">
+              <img src="./images/manual_hp.jpg" alt="48G" class="imagenColumna">
             </div>
-
-            <div class="columna"> 
-                <img class="imagenColumna" src="./images/F100009628.jpg" alt="">
-                <p>prueba3</p>
-            </div>
-    </div>
-        
-    <footer>
-        <p>&copy; Todos los derechos reservados por Yhilmer Vivas 2022</p>
-        <div class="redesSociales">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <p>48G</p>
         </div>
-    </footer>
+      </a>
+    </div>
+
+    <div class="columna">
+      <a href="./pages/calculadoraCASIO.html">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./images/880_resize.jpg" alt="FX-880p" class="imagenColumna">
+            </div>
+            <div class="flip-card-back">
+              <img src="./images/manual_880.jpg" alt="FX-880p" class="imagenColumna">
+            </div>
+          </div>
+          <p>FX-880p</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="columna">
+      <a href="./pages/calculadoraTI.html">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./images/ti_resize.jpg" alt="TI-83Plus" class="imagenColumna">
+            </div>
+            <div class="flip-card-back">
+              <img src="./images/manual_TI.JPG" alt="FX-880p" class="imagenColumna">
+            </div>
+          </div>
+          <p>TI-83</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; Todos los derechos reservados por Yhilmer Vivas 2022</p>
+    <div class="redesSociales">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+  </footer>
 </body>
+
 </html>
